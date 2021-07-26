@@ -1,44 +1,67 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <style type="text/css">
-    p{
-      text-align: center;
-      font-weight: bold;
-  }
-</style>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<title>RQ2</title>
+      <style type="text/css">
+      p{
+          text-align: center;
+          font-weight: bold;
+      }
+  </style>
+
+  <title>RQ2</title>
 </head>
 <body>
-  <div class="">
-    <p>RQ2 - Which pipelines (interaction of resources and tools) are used to extract relationships in sentences?</p>    
-    <p>Table 2 - types of pipelines used</p>
-    <table class="table table-bordered table-hover table-striped" style="text-align: center;">
-      <thead class="thead-dark">
-       <th>ID</th>
-       <th>Database</th>
-       <th>Title</th>
-       <th>Author</th>
-       <th>Paper</th>
-       <th>Year</th>
-       <th>Context Sensitive</th>
-       <th>Statistical</th>
-       <th>Linguistic</th>
-       <th>Supervised</th>
-       <th>Unsupervised</th>
-       <th>Distant Supervised</th>
-       <th>Neural</th>
-   </thead>
-   <tbody>
+  <div class="container">
+    <p>RQ2 - Which pipelines (interaction of resources and tools) are used to extract relationships in sentences?</p> 
+
+    <p class="card">
+      <div>In this table, we present each study classified according to the pipeline used. In this context, we consider that is possible to extract triples using statistical characteristics of text or follow linguistic characteristics to create OpenIE tools. In addition, we also can classify the Open IE approaches according to their type of learning: supervised and unsupervised. However, some studies follow a hybrid approach and most of them use ~distant supervision or neural networks~ to extract triples, in this case we created a different classification due to the complexity of these pipelines.</div>
+      <p>
+        <ul>
+          <li><b>ID</b> - The ID was assigned in selection process, they are not sequential for better tracking the decisions in selection process.</li>
+          <li><b>Database</b> - shows which database index this study </li>
+          <li><b>Title</b> - Presents the title of the study</li>
+          <li><b>Author</b> - Presents the author list of the study </li>
+          <li><b>Paper</b> - Presents a link for the study </li>
+          <li><b>Year</b> - Presents the year which the study was published</li>
+          <li><b>CS</b> - Stats if the approach is context sensitive, which means that OpenIE technique considers the context for extracting relations from text</li>
+          <li><b>Stat</b> - Uses <u>Statistical</u> techniques to extract triples.</li>
+          <li><b>Ling</b> - Uses <u>Linguistic</u> techniques to extract triples.</li>
+          <li><b>Sup</b> - Uses <u>Supervised</u> learning techniques to extract triples.</li>
+          <li><b>Unsup</b> - Uses <u>Unsupervised</u> learning techniques to extract triples.</li>
+          <li><b>Dist Sup</b> - Uses <u>Distant Supervised</u> techniques to extract triples.</li>
+          <li><b>Neural</b> - Uses <u>Neural</u> techniques to extract triples.</li>
+      </ul>
+  </p>
+
+  <a href="index.html?#contents" class="btn btn-primary">Back to Index</a>
+  <br>  <br>
+
+  <table class="table table-bordered table-hover table-striped" style="text-align: center;">
+      <thead class="thead-dark" style="font-size:0.8em">
+         <th>ID</th>
+         <th>Database</th>
+         <th>Title</th>
+         <th>Author</th>
+         <th>Paper</th>
+         <th>Year</th>
+         <th>CS</th>
+         <th>Stat</th>
+         <th>Ling</th>
+         <th>Sup</th>
+         <th>Unsup</th>
+         <th>Dist Sup</th>
+         <th>Neural</th>
+     </thead>
+     <tbody>
 
       <tr>
         <td>1</td>
@@ -2427,7 +2450,7 @@
     </tr>
 </tbody>
 </table>
-<a href="index.html" class="btn btn-primary">Go to Index</a>
+<a href="index.html?#contents" class="btn btn-primary">Go to Index</a>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
