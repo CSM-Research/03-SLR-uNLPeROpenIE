@@ -1,4 +1,4 @@
-# Using Natural Language Processing to Extract Relations: A Systematic Mapping of Open Information Extraction Approaches
+# Using Open Information Extraction to Extract Relations: An Extended Systematic Mapping
 
 In this repository you will find the results of the systematic mapping related to the use of OpenIE.
 
